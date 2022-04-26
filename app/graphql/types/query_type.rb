@@ -5,10 +5,7 @@ module Types
     include GraphQL::Types::Relay::HasNodesField
 
     field :user, resolver: Resolvers::UserResolver
+    field :users, resolver: Resolvers::UsersResolver
 
-    field :users, [Types::UserType], null: false
-    def users
-      User.all
-    end
   end
 end
