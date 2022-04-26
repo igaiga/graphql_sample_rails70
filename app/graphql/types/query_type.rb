@@ -7,5 +7,7 @@ module Types
     field :user, resolver: Resolvers::UserResolver
     field :users, resolver: Resolvers::UsersResolver
 
+    field :book, resolver: Resolvers::BookResolver
+    field :books, resolver: Resolvers::BooksResolver
   end
 end
