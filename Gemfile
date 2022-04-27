@@ -72,6 +72,7 @@ group :test do
 end
 
 gem 'graphql'
+gem 'graphql-batch'
 group :development do
   gem 'graphiql-rails'
 end
