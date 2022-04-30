@@ -8,5 +8,8 @@ module Types
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
 
     field :user, UserType, null: false
+    def user
+      Loaders::RecordLoader.for(User).load(object.user_id)
+    end
   end
 end
